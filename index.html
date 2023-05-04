@@ -5,24 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>two do project</title>
+    <title>TODO-PROJECT</title>
     <link rel="stylesheet" href="project.css">
 </head>
 
 <body>
 
-    <section class="main">
-        <h1>TO DO</h1>
-        <input type="text" id="input" placeholder="enter answer" class="input">
-        <button id="addtodo" class="button">click</button>
-        <div id="answer" class="answer">
+    <div class="div">
+        <p class="m"></p>
+    </div>
 
+    <section class="main">
+        <h1><span>TO</span> DO</h1>
+        <div id="newtask">
+            <input type="text" id="todo-label" placeholder="ENTER LIST" class="input">
+            <button id="addtodo" class="button" onclick="addTodo()">ADD</button>
         </div>
 
-        <h1>complete check</h1>
+        <h1>LIST-<span>ITEM</span></h1>
+        <div class="task">
+            <ul id="ul-todo">
 
-        <div id="check">
+            </ul>
+        </div>
 
+
+        <h1><span>COM</span>PLETED</h1>
+        <div class="task">
+            <ul id="ul-completed">
+
+            </ul>
         </div>
     </section>
 

@@ -1,33 +1,170 @@
-*{
-    margin: 0;
+@charset "UTF-8";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+@import 'https://fonts.googleapis.com/css?family=Nunito:300,400,700';
+
+*,
+*:before,
+*:after {
     padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.main{
-    background-color: #566573 ;
-    width: 340px;
-    height: 600px;
-    text-align: center;
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: -o-linear-gradient(315deg,
+            #8052EC,
+            #D161FF);
+    background-image: linear-gradient(135deg,
+            #8052EC,
+            #D161FF);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.main {
+    width: 50%;
+    min-width: 340px;
+    position: absolute;
     margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 0;
+    border-radius: 8px;
 }
 
-/* .answer{
+#newtask {
+    position: relative;
+    padding: 30px 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#newtask input {
+    border-radius: 5px;
+    width: 70%;
+    height: 45px;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+
+#newtask input:focus {
+    outline: none;
+    border-color: #8052EC;
+}
+
+#newtask button {
+    position: relative;
+    float: right;
+    width: 23%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #8052EC;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.task {
+    background: #ffffff;
+    height: 150px;
+    padding: 5px 10px;
+    border-radius: 0px;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    gap: 70px;
-    justify-content: center;
-} */
-
-.input{
-   margin-top: 20px;
-   height: 40px;
-   border-radius: 9px;
-   border: 1px solid white;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 2px solid #d1d3d4;
+    border-radius: 9px;
 }
 
-.button{
-    width: 50px;
-    height: 40px;
-    border-radius: 9px;
-   border: 1px solid white;
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+h1 {
+    color: white;
+}
+
+h1 span {
+    color: #8052EC;
+}
+
+
+.div {
+    background: url(https://64.media.tumblr.com/2b0ec5e7d4763b0cc6aaba6982be379c/tumblr_occujlvMQE1qze3hdo1_r2_500.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.m:first-child {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: rotate 5s infinite;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 15px rgba(200, 200, 200, 1);
+}
+
+
+
+#profile-header {
+    background: url(https://cdn.discordapp.com/attachments/576382988615548953/869688243157876766/tumblr_occujlvMQE1qze3hdo1_r2_500.gif) no-repeat center center fixed !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*   height: 82vh; */
+    margin: 0;
+}
+
+#profile-name {
+    display: -moz-stack;
+}
+
+#followers-count,
+#following-count {
+    display: none;
 }
